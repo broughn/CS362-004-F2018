@@ -86,6 +86,13 @@ randomresult: randomtestcard1.c dominion.o rngs.o*
 	gcc -o randomtest2 -g randomtestcard2.c dominion.o rngs.o $(CFLAGS) -coverage -fpic -lm
 	gcc -o randomtestadventurer -g randomtestadventurer.c dominion.o rngs.o $(CFLAGS) -coverage -fpic -lm
 
+	./randomtest1 >> randomtestcard1.out
+	gcov -b randomtestcard1.c >> randomtestcard1.out
+	./randomtest2 >> randomtestcard2.out
+	gcov -b randomtestcard2.c >> randomtestcard2.out
+	./randomtestadventurer >> randomtestadventurer.out
+	gcov -b randomtestadventurer.c >> randomtestadventurer.out
+
 
 player: player.c interface.o
 	gcc -o player player.c -g  dominion.o rngs.o interface.o $(CFLAGS)
