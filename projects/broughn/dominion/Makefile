@@ -81,6 +81,11 @@ unittestresult: cardtest1.c cardtest2.c cardtest3.c cardtest4.c unittest1.c unit
 	./cardtest4 >> unittestresults.out
 	gcov cardtest4.c dominion.c -b >> unittestresults.out
 
+randomresult: randomtestcard1.c dominion.o rngs.o*
+	gcc -o randomtest1 -g randomtestcard1.c dominion.o rngs.o $(CFLAGS) -coverage -fpic -lm
+	gcc -o randomtest2 -g randomtestcard2.c dominion.o rngs.o $(CFLAGS) -coverage -fpic -lm
+	gcc -o randomtestadventurer -g randomtestadventurer.c dominion.o rngs.o $(CFLAGS) -coverage -fpic -lm
+
 
 player: player.c interface.o
 	gcc -o player player.c -g  dominion.o rngs.o interface.o $(CFLAGS)
