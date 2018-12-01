@@ -1,0 +1,77 @@
+----- Testing function: buyCard -----
+>>> All tests passed <<<
+
+File 'unittest1.c'
+Lines executed:100.00% of 25
+Branches executed:100.00% of 8
+Taken at least once:50.00% of 8
+Calls executed:63.64% of 11
+Creating 'unittest1.c.gcov'
+
+File 'dominion.c'
+Lines executed:20.75% of 559
+Branches executed:25.54% of 415
+Taken at least once:15.66% of 415
+Calls executed:12.63% of 95
+Creating 'dominion.c.gcov'
+
+Lines executed:24.14% of 584
+----- Testing function: fullDeckCount -----
+>>> All tests passed <<<
+
+File 'unittest2.c'
+Lines executed:100.00% of 32
+Branches executed:100.00% of 10
+Taken at least once:50.00% of 10
+Calls executed:61.54% of 13
+Creating 'unittest2.c.gcov'
+
+File 'dominion.c'
+Lines executed:22.36% of 559
+Branches executed:28.43% of 415
+Taken at least once:18.31% of 415
+Calls executed:12.63% of 95
+Creating 'dominion.c.gcov'
+
+Lines executed:26.57% of 591
+----- Testing function: whoseTurn -----
+>>> All tests passed <<<
+
+File 'unittest3.c'
+Lines executed:100.00% of 16
+Branches executed:100.00% of 4
+Taken at least once:50.00% of 4
+Calls executed:71.43% of 7
+Creating 'unittest3.c.gcov'
+
+File 'dominion.c'
+Lines executed:22.72% of 559
+Branches executed:28.43% of 415
+Taken at least once:18.31% of 415
+Calls executed:12.63% of 95
+Creating 'dominion.c.gcov'
+
+Lines executed:24.87% of 575
+----- Testing function: isGameOver -----
+>>> All tests passed <<<
+
+File 'unittest4.c'
+Lines executed:100.00% of 22
+Branches executed:100.00% of 6
+Taken at least once:50.00% of 6
+Calls executed:66.67% of 9
+Creating 'unittest4.c.gcov'
+
+File 'dominion.c'
+Lines executed:24.51% of 559
+Branches executed:30.36% of 415
+Taken at least once:20.24% of 415
+Calls executed:12.63% of 95
+Creating 'dominion.c.gcov'
+
+Lines executed:27.37% of 581
+----- Testing Card: smithy -----
+Test 1: Current player receives 3 cards
+Hand count = 6, expected = 7
+Test 2: Cards were drawn from player's own deck
+Deck count = 2, expected = 2
